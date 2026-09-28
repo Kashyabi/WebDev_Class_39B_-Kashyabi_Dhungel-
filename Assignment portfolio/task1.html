@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio </title>
+    <link rel="stylesheet" href="task1.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,8 @@
         <a href="#experience">Experience</a> 
         <a href="#skills">Skills</a> 
         <a href="#projects">Projects</a> 
-        <a href="#video">YouTube Video</a> 
+        <a href="#video">YouTube Video</a>
+        <a href="#form"> Form </a> 
     </nav>
     </header>
 
@@ -24,12 +26,12 @@
     <strong> Shizuka Minamoto </strong> is a <b>dedicated and professional businesswoman</b> known for her 
     <em>kind personality and strong leadership skills</em>. She has a <u>responsible and organized 
     approach</u> to her work and inspires her team through her <mark>positive attitude and 
-    creativity</mark>. She owns a <strong>trusted mineral water company</strong> that provides <mark>
-    clean and safe drinking water</mark> to customers, using advanced H<sub>2</sub>O purification
-    technology and maintaining high-quality standards for 10<sup>th</sup>-level customer satisfaction.
-    She is committed to providing <mark>safe and high-quality drinking water</mark> to her customers.
+    creativity</mark>. She owns a trusted mineral water company that provides clean and safe drinking 
+    water to customers, using advanced H<sub>2</sub>O purification technology and maintaining 
+    high-quality standards for 10<sup>th</sup>-level customer satisfaction. She is committed 
+    to providing <mark>safe and high-quality drinking water</mark> to her customers.
     </p>
-    <img src="boss.jpg" alt="Photo of  Shizuka Minamoto " width="300" height="300">
+    <img src="boss.jpg" alt="Photo of  Shizuka Minamoto " width="300" height="500">
     <figcaption>I'm pretty</figcaption>
     </section>
 
@@ -93,8 +95,42 @@
     <section id="video"> 
     <h2>YouTube Video</h2> 
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"> YouTube </a> <br>
-        <iframe src="https://www.youtube.com/embed/5hjoC0W4J0Y" title="YouTube Video" allowfullscreen>
-        </iframe> 
+        <iframe 
+            src="https://www.youtube.com/embed/TO-rE-RM6sc"
+            title="YouTube Video"
+            allowfullscreen>
+        </iframe>
     </section>
+
+    <section id="form">
+    <h2> Form </h2>
+    <form action="/submit" method="POST">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="[email protected]">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="employee">Employee</option>
+        </select>
+
+        <button type="submit" id="button">Submit</button>
+    </form> 
+    </section>  
 </body>
 </html>
